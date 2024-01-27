@@ -29,7 +29,7 @@ export async function getProject(slug: string): Promise<Project> {
     content
     }`,
     { slug }
-  );
+  ) as Promise<Project>;
 }
 
 export async function getPages(): Promise<Page[]> {
@@ -54,5 +54,5 @@ export async function getPage(slug: string): Promise<Page> {
       content
     }`,
     { slug }
-  );
+  ) as Promise<Page>;
 }
