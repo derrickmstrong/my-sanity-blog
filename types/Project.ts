@@ -1,4 +1,3 @@
-import { StaticImageData } from "next/image";
 import { PortableTextBlock } from "sanity";
 
 export type Project = {
@@ -17,4 +16,11 @@ export type Project = {
   };
   url: string;
   content: PortableTextBlock[];
+};
+
+type StaticImageData = {
+  src: string;
+  height: number;
+  width: number;
+  blurDataURL?: string;
 };
