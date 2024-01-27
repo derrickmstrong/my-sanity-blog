@@ -1,18 +1,20 @@
+import { StaticImageData } from "next/image";
 import { PortableTextBlock } from "sanity";
 
 export type Project = {
-    _id: string;
-    _createdAt: Date;
-    name: string;
-    slug: {
-        current: string;
+  _id: string;
+  _createdAt: Date;
+  name: string;
+  slug: {
+    current: string;
+  };
+  image: {
+    src: string | StaticImageData;
+    asset: {
+      url: string | StaticImageData;
     };
-    image: {
-        asset: {
-        url: string;
-        };
-        alt: string;
-    };
-    url: string;
-    content: PortableTextBlock[];
-}
+    alt: string;
+  };
+  url: string;
+  content: PortableTextBlock[];
+};

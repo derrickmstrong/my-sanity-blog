@@ -36,7 +36,7 @@ export default async function Project({ params }: ProjectProps) {
 
       {/* image goes here */}
       <Image
-        src={project.image}
+        src={project.image.asset.url}
         alt=""
         width={1920}
         height={1080}
