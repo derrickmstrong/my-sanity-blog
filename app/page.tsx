@@ -31,7 +31,7 @@ export default async function Home() {
               <Image
                 src={project.image}
                 alt=""
-                width={6000}
+                width={600}
                 height={300}
                 className="object-cover rounded-lg border border-gray-500"
               />
