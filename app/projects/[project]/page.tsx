@@ -1,4 +1,5 @@
 import { getProject } from "@/utils/sanity-utils";
+import { PortableText } from "@portabletext/react";
 
 type ProjectProps = {
     params: {
@@ -26,6 +27,11 @@ export default async function Project({ params } : ProjectProps) {
             View Project
           </a>
         </header>
+
+        {/* content goes here */}
+        <div><PortableText value={project.content} /></div>
+
+        {/* image goes here */}
       </div>
     );
 }
