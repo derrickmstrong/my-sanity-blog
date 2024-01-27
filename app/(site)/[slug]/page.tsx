@@ -18,9 +18,9 @@ export default async function Page({ params }: PageProps) {
           {page.title}
         </h1>
       </header>
-      <div className="text-lg text-gray-700 mt-5 mx-2">
+      <div className="prose lg:prose-xl prose-slat prose-a:text-blue-600 mt-5 mx-2 md:mx-0">
         <PortableText value={page.content} />
-      </div>      
+      </div>
     </div>
   );
 }
