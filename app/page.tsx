@@ -6,7 +6,7 @@ export default async function Home() {
   const projects = await getProjects();
 
   return (
-    <div className="max-w-5xl mx-auto py-10">
+    <div>
       <h1 className="ml-2 md:ml-0 text-7xl font-extrabold">
         Ahola, I&apos;m{" "}
         <span className="bg-gradient-to-r from-cyan-400 to-blue-600 bg-clip-text text-transparent">
@@ -25,7 +25,7 @@ export default async function Home() {
           <Link
             href={`/projects/${project.slug}`}
             key={project._id}
-            className="border-2 border-gray-500 rounded-lg m-2 md:m-0 p-1 hover:scale-105 hover:border-blue-500 transition"
+            className="border-2 border-gray-300 rounded-lg m-2 md:m-0 p-1 hover:scale-105 hover:border-blue-500 transition"
           >
             {project.image && (
               <Image
