@@ -9,7 +9,7 @@ const config = defineConfig({
   title: "Personal Blog",
   apiVersion: "2023-01-26",
   basePath: "/admin",
-  useCdn: false,
+  useCdn: true,
   plugins: [structureTool(), visionTool()],
   schema: {
     types: schemaTypes,
