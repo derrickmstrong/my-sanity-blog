@@ -4,11 +4,12 @@ import { visionTool } from "@sanity/vision";
 import schemaTypes from "./schemas";
 
 const config = defineConfig({
-  projectId: "pea6y4qw",
-  dataset: "production",
+  projectId: process.env.NEXT_PUBLIC_SANITY_PROJECT_ID || 'project-id',
+  dataset: process.env.NEXT_PUBLIC_SANITY_DATASET || "production",
   title: "Personal Blog",
   apiVersion: "2023-01-26",
   basePath: "/admin",
+  useCdn: false,
   plugins: [structureTool(), visionTool()],
   schema: {
     types: schemaTypes,
