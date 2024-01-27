@@ -21,18 +21,13 @@ const project = {
       name: "image",
       title: "Image",
       type: "image",
-      option: {
+      options: {
         hotspot: true,
       },
       fields: [
-        {
-          name: "alt",
-          title: "Alternative Text",
-          type: "string",
-          option: {
-            isHighlighted: true,
-          },
-        },
+        { name: "title", title: "Title", type: "string" },
+        { name: "alt", title: "Alt Description", type: "string" },
+        { name: "attribution", title: "Attribution", type: "string" },
       ],
     },
     {
