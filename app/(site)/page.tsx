@@ -1,4 +1,4 @@
-import { getProjects } from "@/utils/sanity-utils";
+import { getProjects } from "@/app/(studio)/utils";
 import Image from "next/image";
 import Link from "next/link";
 

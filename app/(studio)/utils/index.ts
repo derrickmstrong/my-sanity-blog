@@ -1,4 +1,4 @@
-import { client } from "@/config/client-config";
+import { client } from "@/config/client";
 import { Project } from "@/types/Project";
 import { groq } from "next-sanity";
 
