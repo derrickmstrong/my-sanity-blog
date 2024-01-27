@@ -12,7 +12,7 @@ const project = {
       name: "slug",
       title: "Slug",
       type: "slug",
-      option: {
+      options: {
         source: "name",
         maxLength: 100,
       },
