@@ -2,7 +2,7 @@ import { getProjects } from "@/utils/sanity-utils";
 
 export default async function Home() {
   const projects = await getProjects();
-  console.log('projects:', projects);
+  
   return (
     <div>
       <h1>Projects</h1>
