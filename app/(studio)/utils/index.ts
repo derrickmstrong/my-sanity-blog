@@ -13,7 +13,7 @@ export async function getProjects(): Promise<Project[]> {
     "image": image.asset->url,
     url,
     content
-    }`
+    }`,
   );
 }
 
@@ -41,8 +41,9 @@ export async function getPages(): Promise<Page[]> {
     title,
     "slug": slug.current,
     content
-    }`
-  );
+    }`,
+    { next: { revalidate: 60 } }
+  ) as Promise<Page[]>;
 }
 
 export async function getPage(slug: string): Promise<Page> {
